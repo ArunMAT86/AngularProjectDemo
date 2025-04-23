@@ -1,0 +1,25 @@
+<div>
+    <img src="assets/images/RevShop-logo.jpeg"/>
+    <h2>Login</h2>
+    <form class="login-form" (ngSubmit)="onSubmit()" #LoginForm="ngForm">
+        <input
+        class="login-input"
+        [(ngModel)]="username"
+        name="username"
+        placeholder="username"
+        required
+        />
+        <br/>
+        <input
+        class="login-input"
+        [(ngModel)]="password"
+        name="password"
+        placeholder="password"
+        required
+        />
+        <br/>
+        <button class="login-button" type="submit">Login</button>
+    </form>
+    <p class="login-p">Don't Have Account?</p>
+    <button class="login-button" (click)="goToSignup()">SignUp</button>
+</div>
